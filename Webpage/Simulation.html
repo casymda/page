@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <title>Simulation</title>
+
+  <!-- Bootstrap-CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <script>
+      $(function(){
+        $("#nav-placeholder").load("https://casymda.github.io/page/Webpage/nav.html");
+      }); 
+  </script>
+  
+</head>
+
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <div class="jumbotron text-center"
+    style="background-image: url('images/bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <div class="header">
+      <h1>Simulation</h1>
+      <p>Erstellung von Simulationsmodellen über die strategische Planung hinaus</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="lead">Simulation ist das Nachbilden eines
+      dynamischen Prozesses in einem System mit Hilfe eines
+      experimentierfähigen Modells, um zu Erkenntnissen zu
+      gelangen, die auf die Wirklichkeit übertragbar sind. (VDI,
+      1993).</p>
+    <p class="lead">Es ist das Standard-Tool zur strategischen Planung und ermöglicht die Untersuchung von noch nicht
+      existierenden Systemen, bzw. ohne direkten Betriebseingriff. Anwendungsgebiete erstrecken sich über verschiedene
+      Branchen und Fachbereiche wie Automotive (VDA), Intralogistik, Transport-Logistik,
+      Maritime Logistik, Healthcare, Aviation, etc.
+    </p>
+    <p class="lead">Für DES (Discrete Event Simulation) ist der Einsatz allerdings nicht nur auf die strategische
+      Planung begrenzt. Die Digitalisierung macht aktuelle Systemzustände transparent. Vor allem die Nutzung
+      vorhandener Daten zur operativen Nutzung von Simulation weckt Potentiale - Unterstützung von Entscheidungen in
+      Echtzeit. Das Ergebnis ist ein dynamischer & ablauffähiger Digital-Twin.
+    </p>
+    <p class="lead">Simulation ist kein Allheilmittel. Es ist auch kein Ersatz für Optimierung & Machine Learning. Denn
+      lediglich durch die Kombination von sämtlichen Lösungen können komplexe Aufgabenstellungen der heutigen Zeit
+      bewältigt werden. Es handelt sich um ein sinnvolles Werkzeug zur Analyse von komplexen dynamischen &
+      stochastischen Systemen in der Logistik.
+    </p>
+
+    <div>
+      <img class="img" src="images/digitaltwin.png" alt="Bild" width="1150" height="550">
+    </div>
+
+    <hr>
+
+    <div class="page-header">
+      <h1>Konzept </h1>
+
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img class="img" src="images/digtwin.png" alt="Bild" width="1150" height="300">
+          </div>
+          <div class="item">
+            <img class="img" src="images/Ansatz.png" alt="Bild" width="1150" height="300">
+          </div>
+          <div class="item">
+            <img class="img" src="images/Tools.png" alt="Bild" width="1150" height="300">
+          </div>
+
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Zurück</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Weiter</span>
+        </a>
+      </div>
+    </div>
+    <h1>Businessnutzen</h1>
+    <div class="list-group">
+      <a class="list-group-item"><b>Digital Twin</b> eines physischen Systems zur Lösung von Entscheidungsproblemen
+      </a>
+      <a class="list-group-item"><b>Verschlankung</b> von Prozessen</a>
+      <a class="list-group-item"><b>Transparenz</b> über die eigenen Prozesse</a>
+      <a class="list-group-item">Vergleich verschiedener <b>Umgebungsszenarien</b></a>
+    </div>
+    <hr>
+    <h1>Use Cases</h1>
+    <div class="list-group">
+      <a href="Routenzug.html" class="list-group-item"><b>Routenzug</b> Routenzüge versorgen verschiedene
+        Montageschritte mit Material und Komponenten
+      </a>
+      <a href="Vessels.html" class="list-group-item"><b>Vessel Coordination Center</b> Koordination Schiffsanläufe im
+        Hamburger Hafen
+      </a>
+      <a href="Cruise.html" class="list-group-item"><b>Cruise Gate Terminal</b> Digital Twin zur Optimierung der
+        Zulaufsteuerung
+      </a>
+      <a href="Containerterminal.html" class="list-group-item"><b>Containerterminal</b> Entscheidungsunterstützung für
+        Terminalplaner
+      </a>
+    </div>
+    <hr>
+    <h1>Eingesetzte Tools und Bibliotheken</h1>
+    <div class="row">
+      <img src="images/Tools/simpy.png" class="img-thumbnail" alt="Bild">
+      <img src="images/Tools/python.png" class="img-thumbnail" alt="Bild">
+      <img src="images/Tools/camunda.png" class="img-thumbnail" alt="Bild">
+      <img src="images/Tools/casymda.png" class="img-thumbnail" alt="Bild">
+    </div>
+
+    <hr>
+
+    <footer>
+      <img class="img" src="images/casymda.png" alt="Bild" width="225" height="50">
+    </footer>
+  </div> <!-- /container -->
+
+
+  <!-- Bootstrap-JavaScript
+    ================================================== -->
+  <!-- Am Ende des Dokuments platziert, damit Seiten schneller laden -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

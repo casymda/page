@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <title>Cruise Gate Terminal</title>
+
+  <!-- Bootstrap-CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <script>
+      $(function(){
+        $("#nav-placeholder").load("https://casymda.github.io/page/Webpage/nav.html");
+      }); 
+  </script>
+
+</head>
+
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <div class="jumbotron text-center"
+    style="background-image: url('images/bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <div class="header">
+      <h1> Cruise Gate Terminal </h1>
+      <p>Digital Twin zur Optimierung der Zulaufsteuerung</p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <h1>Der Digital Twin eines Transportökosystems</h1>
+    <p class="lead">Ein Cruise Gate Terminal hat lediglich begrenzte Warteplätze am Terminal für ankommende Fahrzeuge.
+      Störfaktoren haben Einfluss auf die Ankunftszeit und Terminalperformance. Ankunft der Fahrzeuge in einer
+      Vorstaufläche (ca. 20 min entfernt). Störfaktoren haben Einfluss auf die Ankunftszeit und Terminalperformance
+      (Verkehrssituation, Beladedauer).
+    </p>
+    <p class="lead">Unser Ansatz: Erstellung eines Digital Twins in einer Open-Source-Simulationsumgebung und
+      Verknüpfung mit einer IoT-Plattform. Echtzeit-Daten ermöglichen Prognosen basierend auf aktuellem Systemzustand.
+      Sensorik fungiert als Trigger für simulationsbasierte Prognosen zur Bestimmung der Dispatchingzeitpunkte. Ein
+      Dispatching Algorithmus gibt die Fahrzeuge bei Bedarf frei.
+    </p>
+
+    <div>
+      <img class="img" src="images/cruiser.png" alt="Bild" width="1150" height="500">
+    </div>
+
+    <hr>
+
+    <iframe width="1150" height="500" src="https://www.youtube.com/embed/j3d-RI1D-yk" 
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <hr>
+
+    <div class="page-header">
+      <h1>Konzept </h1>
+
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item">
+            <img class="img" src="images/CGHPic.png" alt="Bild" width="1150" height="450">
+          </div>
+          <div class="item">
+            <img class="img" src="images/IoTKonzept.png" alt="Bild" width="1150" height="450">
+          </div>
+          <div class="item">
+            <img class="img" src="images/SafetyFactor.png" alt="Bild" width="1150" height="450">
+          </div>
+          <div class="item active">
+            <img class="img" src="images/cghcase.png" alt="Bild" width="1150" height="450">
+          </div>
+
+
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Zurück</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Weiter</span>
+        </a>
+      </div>
+    </div>
+    <h1>Businessnutzen</h1>
+    <div class="list-group">
+      <a class="list-group-item">Dispatcher erhält ein <b>Unterstützungssystem</b> für die tägliche Verwendung (Decision
+        Support)
+      </a>
+      <a class="list-group-item">Lösung Bestandsproblem durch <b>optimierte Flächennutzung</b> im Terminalbereich
+      </a>
+      <a class="list-group-item"><b>Kurze Berechnungszeit</b> trotz hoher Datenmengen über simultane Simulationsläufe in
+        der
+        Cloud unabhängig von eigenen Assets
+      </a>
+    </div>
+    <hr>
+    <h1>Eingesetzte Tools und Bibliotheken</h1>
+    <div class="row">
+      <img src="images/Tools/simpy.png" class="img-thumbnail" alt="Bild">
+      <img src="images/Tools/python.png" class="img-thumbnail" alt="Bild">
+      <img src="images/Tools/aws.png" class="img-thumbnail" alt="Bild">
+      <img src="images/Tools/lamda.png" class="img-thumbnail" alt="Bild">
+      <img src="images/Tools/thingworx.png" class="img-thumbnail" alt="Bild">
+      <img src="images/Tools/pi.png" class="img-thumbnail" alt="Bild">
+      <img src="images/Tools/excel.png" class="img-thumbnail" alt="Bild">
+      <img src="images/Tools/mqtt.png" class="img-thumbnail" alt="Bild">
+      <img src="images/Tools/camunda.png" class="img-thumbnail" alt="Bild">
+      <img src="images/Tools/here.png" class="img-thumbnail" alt="Bild">
+      <img src="images/Tools/bitbucket.png" class="img-thumbnail" alt="Bild">
+      <img src="images/Tools/git.png" class="img-thumbnail" alt="Bild">
+      <img src="images/Tools/pandas.png" class="img-thumbnail" alt="Bild">
+      <img src="images/Tools/casymda.png" class="img-thumbnail" alt="Bild">
+    </div>
+    <hr>
+    <h1>Mehr Informationen zu eingesetzen Technologien</h1>
+    <div class="list-group">
+      <a href="Prozesse.html" class="list-group-item"><b>Prozess Modellierung</b> Semi-Automatisierte Erstellung von
+        Simulationsmodellen
+      </a>
+      <a href="IoT.html" class="list-group-item"><b>Internet of Things (IoT)</b> Einsatz von IoT-Plattformen und
+        Sensorik
+      </a>
+      <a href="Simulation.html" class="list-group-item"><b>Simulation</b> Erstellung Simulationsmodellen über die
+        strategische Planung hinaus
+      </a>
+    </div>
+    <hr>
+    <footer>
+      <img class="img" src="images/casymda.png" alt="Bild" width="225" height="50">
+    </footer>
+  </div> <!-- /container -->
+
+
+  <!-- Bootstrap-JavaScript
+    ================================================== -->
+  <!-- Am Ende des Dokuments platziert, damit Seiten schneller laden -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

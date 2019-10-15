@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+
+  <title>Startpage</title>
+
+  <!-- Bootstrap-CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  
+</head>
+
+<body>
+
+  <script>
+    function passWord() {
+      var testV = 1;
+      var pass1 = prompt('Bitte Passwort eingeben', ' ');
+      while (testV < 3) {
+        if (!pass1)
+          history.go(-1);
+        if (pass1.toLowerCase() == "casymda") {
+          alert('Herzlich Willkommen! (Bitte Pop-ups aktivieren)');
+          window.open('https://casymda.github.io/page/Webpage/Startpage.html');
+          break;
+        }
+        testV += 1;
+        var pass1 =
+          prompt('Zugriff  verweigert – Passwort falsch, bitte erneut versuchen!', 'Passwort');
+      }
+      if (pass1.toLowerCase() != "Passwort" & testV == 3)
+        history.go(-1);
+      return " ";
+    } 
+  </script>
+
+  <hr>
+
+  <center>
+    <FORM>
+      <p><a class="btn btn-primary btn-lg" role="button" value="Herzlich Willkommen"
+          onClick="passWord()">Herzlich Willkommen &raquo;</a></p>
+    </FORM>
+  </center>
+
+  <hr>
+
+</body>
+
+</html>

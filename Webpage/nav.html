@@ -1,0 +1,71 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+        aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Navigation ein-/ausblenden</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="Startpage.html" class="imkt-navbar__title-link"> <img src="images/casymdaw.png" height="50" alt="logo"
+          class="imkt-navbar__title-logo"> </a>
+    </div>
+
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="Startpage.html">Übersicht</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+            aria-expanded="false">Projekte <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Routenzug.html">Routenzug</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="Vessels.html">Vessel Coordination</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="Cruise.html">Cruise Terminal</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="Containerterminal.html">Containerterminal</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+            aria-expanded="false">Technologien <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Simulation.html">Simulation</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="RL.html">Reinforcement Learning</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="PM.html">Process Mining</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="Prozesse.html">Prozess Modellierung</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="IoT.html">Internet of Things (IoT)</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="Veroeffentlichungen.html">Veröffentlichungen</a></li>
+        <!--/
+        <li><a href="Configurator.html">Configurator</a></li>
+
+        <li><a href="Game.html">Game</a></li>
+
+        <li><a href="Casymda.html">Casymda</a></li>
+        -->
+      </ul>
+    </div>
+    <!--/.navbar-collapse -->
+  </div>
+</nav>
+
+<script>
+    //get page name
+       var path = window.location.pathname;
+       var page = path.split("/").pop(); 
+    //add active class to a href with page name
+     $('nav a[href*="' + page + '"]').parent().addClass('active');
+     $('nav a[href*="' + page + '"]').parent().parent().parent().addClass('active');
+</script> 
